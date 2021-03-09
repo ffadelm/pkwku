@@ -11,7 +11,7 @@
         height: 40rem;
         flex-direction: column;
         display: flex;
-        color: green;
+        color: rgb(0, 88, 0);
         font-weight: bold;
         font-family: montserrat;
     }
