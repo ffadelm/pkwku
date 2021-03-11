@@ -1,41 +1,124 @@
-* {
-    margin-top: 0px;
+body {
+    margin: 0px;
     padding: 0px;
-    background-color: hsl(160, 91%, 82%);
-}
+    background-color: #f6f5f5;
+  }
 
-.main {
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+    height: 95vh;
+    background-image: url("img/19366.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  nav {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-family: montserrat;
-    font-size:15px
-}
-
-button {
-    font-family: montserrat black;
-    font-size: 15px;
-    background:  hsl(160, 100%, 49%);
-    color: black;
-    border: white 3px solid;
-    border-radius: 5px;
-    padding: 12px 20px;
-    margin-top: 10px;
-}
-
-button:hover{
-    opacity:0.9;
-}
-
-.footer {
-    font-family: montserrat, black;
-    font-size: 15px;
-    background-color: #084a3b;
-    height: 50px;
-    display: flex;
-    padding: 10px;
-    margin-top:50px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-}
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    padding: 0px 5%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul a {
+    margin: 30px;
+    font-family: montserrat, sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .logo {
+    font-family: fantasy;
+    color: #000000;
+    font-size: 22px;
+  }
+  .active {
+    font-weight: bold;
+    color: #2d2a2a;
+  }
+  .txt-container h3 {
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+    margin: 45px 0px 25px;
+    line-height: 0px;
+  }
+  .txt-container h1 {
+    font-family: calibri;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin: 45px 0px 25px;
+    line-height: 0px;
+  }
+  .txt-container h4 {
+    font-family: montserrat;
+    color: #403e3e;
+    font-size: 30px;
+    font-size: 22px;
+    margin: 45px 0px 25px;
+    line-height: 30px;
+  }
+  .txt-container{
+    position: absolute;
+    left:13%;
+    top:42%;
+    transform: translate(-13%,-42%);
+  }
+  .txt-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+  }
+
+  .klik-btn{
+    border: 2px solid #373636;
+    color: #373636;
+  }
+
+  .cv{
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border:none;
+  }
+
+  button:active{
+    transform:scale(1.1);
+  }
+
+  .model{
+    height: 360px;
+    position: absolute;
+    bottom: 0px;
+    left:70%;
+  }
+
+  .about-container{
+    width:80%;
+    height: 330px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7px auto 20px auto;
+    position: relative;
+  }
