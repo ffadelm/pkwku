@@ -1,124 +1,306 @@
+@font-face {
+  font-family: 'mExtraBold';
+  src: url(font/MontserratAlternates-ExtraBold.ttf);
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #f6f5f5;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f5f5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/19366.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  font-family: montserrat;
+  font-size: 30px;
+  margin: 30px;
+  color: #505050;
+  font-weight: 700;
+}
+
+
+.logo {
+  font-family: mExtraBold;
+  color: #000000;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+.txt-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+}
+
+.txt-container h3 {
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 50px;
+  color: #6d6d6d;
+  margin: 45px 6px 70px;
+  line-height: 0px;
+}
+
+.txt-container h1 {
+  font-family: calibri;
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 100px;
+  letter-spacing: 1px;
+  margin: 45px 0px 70px;
+  line-height: 0px;
+}
+
+.txt-container p {
+  font-family: calibri;
+  color: #403e3e;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 45px 6px 50px;
+  line-height: 0px;
+}
+
+.txt-container button {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: mExtraBold;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  margin: 0px 10px;
+}
+
+.klik-btn {
+  border: 2px solid #373636;
+  color: #373636;
+}
+
+.unduh-cv {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+.model {
+  border-radius: 100%;
+  height: 350px;
+  position: absolute;
+  bottom: 25vh;
+  left: 70%;
+}
+
+.about-container {
+  width: 95%;
+  height: 130vh;
+  background-color: #f1f9fb;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7px auto -20px auto;
+  position: relative;
+}
+
+.about-container div {
+  font-family: montserrat;
+  color: #403e3e;
+  font-size: 25px;
+  margin: 0px 50px 50px;
+  line-height: 40px;
+}
+
+.footers {
+  background-color: #f1f9fb;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: montserrat;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    box-sizing: border-box;
   }
 
-  ul {
-    list-style-type: none;
+  .model {
+    height: 250px;
+    left: 90%;
+    transform: translate(-90%);
+    bottom: 35vh;
   }
 
-  a {
-    text-decoration: none;
+  .txt-container {
+    top: 42%;
   }
 
-  section {
-    width: 100%;
-    height: 95vh;
-    background-image: url("img/19366.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  .txt-container h3 {
+    font-size: 35px;
+    margin: 45px 6px 50px;
   }
+
+  .txt-container h1 {
+    font-size: 70px;
+    margin: 45px 0px 55px;
+  }
+
+  .txt-container p {
+    font-size: 20px;
+    margin: 45px 6px 45px;
+  }
+
+  .txt-container button {
+    margin: 5px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .about-container {
+    height: 130vh;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .about-container img {
+    display: none;
+  }
+
+  .about-container h2 {
+    margin-left: 0vh !important;
+    font-size: 25px;
+  }
+
+  .about-container p {
+    margin-left: 0vh !important;
+    font-size: 20px;
+  }
+
+  .footers {
+    font-size:20px;
+  }
+
+  .footers img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 460px){
+section {
+  width: 100%;
+}
   nav {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 100px;
     background-color: #ffffff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
     padding: 0px 5%;
   }
-  nav ul {
-    display: flex;
-  }
-  nav ul a {
-    margin: 30px;
-    font-family: montserrat, sans-serif;
+
+  nav ul li a {
+    font-family: montserrat;
+    font-size: 22px;
+    margin: 20px 15px;
     color: #505050;
-    font-size: 15px;
     font-weight: 700;
   }
-  .logo {
-    font-family: fantasy;
-    color: #000000;
-    font-size: 22px;
+
+  .logo{
+    display: none;
   }
-  .active {
-    font-weight: bold;
-    color: #2d2a2a;
+
+  .model {
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
+  .txt-container {
+    top: 55%;
+    left: 20%;
+  }
+
   .txt-container h3 {
-    font-family: calibri;
-    font-weight: bold;
-    color: #6d6d6d;
-    font-size: 22px;
-    margin: 45px 0px 25px;
-    line-height: 0px;
-  }
-  .txt-container h1 {
-    font-family: calibri;
-    font-weight: bold;
-    color: #1a1a1a;
-    font-size: 60px;
-    letter-spacing: 1px;
-    margin: 45px 0px 25px;
-    line-height: 0px;
-  }
-  .txt-container h4 {
-    font-family: montserrat;
-    color: #403e3e;
     font-size: 30px;
-    font-size: 22px;
-    margin: 45px 0px 25px;
-    line-height: 30px;
+    margin: 45px 6px 40px;
   }
-  .txt-container{
-    position: absolute;
-    left:13%;
-    top:42%;
-    transform: translate(-13%,-42%);
+
+  .txt-container h1 {
+    font-size: 48px;
+    margin: 45px 0px 50px;
   }
-  .txt-container button{
+
+  .txt-container p {
+    font-size: 25px;
+    margin: 45px 6px 20px;
+  }
+
+  .txt-container button {
+    margin: 25px;
     width: 130px;
-    height: 42px;
-    border-radius: 10px;
-    font-family: calibri;
-    font-weight: bold;
-    font-size: 14px;
-    outline: none;
-    margin: 0px 10px;
+    height: 30px;
+    font-size: 15px;
   }
 
-  .klik-btn{
-    border: 2px solid #373636;
-    color: #373636;
+  .about-container h2 {
+    font-size: 30px !important;
   }
 
-  .cv{
-    background-color: #0b0b0b;
-    color: #ffffff;
-    border:none;
+  .about-container p {
+    font-size: 15px !important;
   }
 
-  button:active{
-    transform:scale(1.1);
+  .footers {
+    font-size:12px;
   }
 
-  .model{
-    height: 360px;
-    position: absolute;
-    bottom: 0px;
-    left:70%;
+  .footers img {
+    width: 80px;
   }
-
-  .about-container{
-    width:80%;
-    height: 330px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 2px 2px rgba(0,0,0,0.2);
-    display: flex;
-    margin: -7px auto 20px auto;
-    position: relative;
-  }
+}

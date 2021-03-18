@@ -2,226 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faysal Fadel M | 20190140097</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/ic_UMY.png"
   </head>
-
-  <body style="margin: 0px; padding: 0px; background-color: #f6f5f5">
-    <section
-      style="
-        width: 100%;
-        height: 100vh;
-        background-image: url(img/19366.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      "
-    >
-      <nav
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          height: 100px;
-          background-color: #ffffff;
-          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
-          padding: 0px 5%;
-        "
-      >
-        <a
-          href="https://pkwku.herokuapp.com/"
-          target="_blank"
-          style="
-            font-family: fantasy;
-            color: #000000;
-            font-size: 50px;
-            margin: 30px;
-            color: #505050;
-            font-weight: 700;
-            text-decoration: none;
-          "
+  <body>
+    <section>
+      <nav>
+        <a class="logo" href="https://pkwku.herokuapp.com/" target="_blank"
           >PKWKU</a
         >
-
-        <ul style="display: flex; list-style-type: none">
+        <ul>
           <li>
-            <a
-              href="#main-content"
-              style="
-                margin: 30px;
-                font-family: montserrat;
-                color: #505050;
-                font-size: 30px;
-                font-weight: 700;
-                font-weight: bold;
-                text-decoration: none;
-              "
-              >Home</a
-            >
+            <a class="active" href="#main-content">Home</a>
           </li>
           <li>
-            <a
-              href="#about-content"
-              style="
-                margin: 30px;
-                font-family: montserrat;
-                color: #505050;
-                font-size: 30px;
-                font-weight: 700;
-                text-decoration: none;
-              "
-              >About</a
-            >
+            <a href="#about-content">About</a>
           </li>
           <li>
-            <a
-              href="#footer"
-              style="
-                margin: 30px;
-                font-family: montserrat;
-                color: #505050;
-                font-size: 30px;
-                font-weight: 700;
-                text-decoration: none;
-              "
-              >Contact me</a
-            >
+            <a href="#footer">Contact me</a>
           </li>
         </ul>
       </nav>
 
-      <div
-        id="main-content"
-        style="
-          position: absolute;
-          left: 13%;
-          top: 42%;
-          transform: translate(-13%, -42%);
-        "
-      >
-        <h3
-          style="
-            font-family: calibri;
-            font-weight: bold;
-            font-size: 50px;
-            color: #6d6d6d;
-            margin: 45px 6px 70px;
-            line-height: 0px;
-          "
-        >
-          Hello World,
-        </h3>
+      <div id="main-content" class="txt-container">
+        <h3>Hello World,</h3>
+        <h1>Nama Saya Faysal</h1>
+        <p>Saya Seorang Mahasiswa</p>
 
-        <h1
-          style="
-            font-family: calibri;
-            font-weight: bold;
-            color: #1a1a1a;
-            font-size: 100px;
-            letter-spacing: 1px;
-            margin: 45px 0px 70px;
-            line-height: 0px;
-          "
-        >
-          Nama Saya Faysal
-        </h1>
-
-        <p
-          style="
-            font-family: montserrat;
-            color: #403e3e;
-            font-size: 30px;
-            margin: 45px 6px 50px;
-            line-height: 30px;
-          "
-        >
-          Saya Seorang Mahasiswa
-        </p>
-
-        <a
-          href="#about-content"
-          style="
-            text-decoration: none;
-            padding: 10px 35px 10px 35px;
-            border-radius: 5px;
-            font-family: calibri;
-            font-weight: bold;
-            font-size: 20px;
-            outline: none;
-            margin: 0px 10px;
-            border: 2px solid #373636;
-            background-color: #f3f1f1;
-            color: #373636;
-          "
-        >
-          Lanjut
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1JXmhzTpzJoNG7cQLHb7rOFwxE5OvZtbQ/view?usp=sharing"
-          target="_blank"
-          title="Download CV"
-          style="
-            text-decoration: none;
-            padding: 10px 15px 10px 15px;
-            border-radius: 5px;
-            font-family: calibri;
-            font-weight: bold;
-            font-size: 20px;
-            outline: none;
-            margin: 0px 10px;
-            border: 2px solid #373636;
-            background-color: #0b0b0b;
-            color: #ffffff;
-          "
+        <button class="klik-btn" onclick="window.location.href='#about-content'">Lanjut</button>
+        <button
+          class="unduh-cv"
+          onclick="window.location.href='https://drive.google.com/file/d/1JXmhzTpzJoNG7cQLHb7rOFwxE5OvZtbQ/view?usp=sharing'"
         >
           Download CV
-        </a>
+        </butt>
       </div>
 
-      <img
-        src="img/profile_img.jpg"
-        alt="profile_img"
-        style="
-          border-radius: 100%;
-          height: 350px;
-          position: absolute;
-          bottom: 25vh;
-          left: 70%;
-        "
-      />
+      <img class="model" src="img/profile_img.jpg" alt="profile_img" />
     </section>
 
-    <div
-      id="about-content"
-      style="
-        width: 95%;
-        height: 106vh;
-        background-color: #f1f9fb;
-        border-radius: 20px;
-        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-        display: flex;
-        margin: -7px auto -20px auto;
-        position: relative;
-      "
-    >
+    <div class="about-container" id="about-content">
       <img
         src="img/about.jpg"
         style="width: 350px; height: 260px; margin: 20px; padding: 50px"
       />
-
-      <div
-        style="
-          font-family: montserrat;
-          color: #403e3e;
-          font-size: 25px;
-          margin: 0px 50px 50px;
-          line-height: 30px;
-          letter-spacing: 1px;
-        "
-      >
-        <p style="font-size: 50px; font-weight: bold; color: #2c2c2c">
+      <div>
+        <p
+          style="
+            font-size: 50px;
+            font-weight: bold;
+            color: #2c2c2c;
+            text-align: center;
+          "
+        >
           About me
         </p>
         <ul>
@@ -243,13 +79,7 @@
           </li>
           <li>
             <strong>Skill:</strong>
-            <span>
-              <ul>
-                <li>Corel Draw</li>
-                <li>Product Design</li>
-                <li>UX Design</li>
-              </ul>
-            </span>
+            <span> Corel Draw, Product Design, UX Design </span>
           </li>
           <li>
             <strong>Pengalaman Organisasi:</strong>
@@ -264,35 +94,21 @@
             <span>faysalfadelm0107@gmail.com</span>
           </li>
         </ul>
-        <div style="margin-left: -60vh">
-          <h2>Motivasi Masuk IT :</h2>
-          <p>
-            Motivasi saya Masuk IT adalah karena ketertarikan saya dalam Dunia
-            Teknologi sehingga ada dorongan dan niatan untuk mengarunginya lebih
-            jauh lagi.
-          </p>
-          <h2>Harapan Setelah Lulus :</h2>
-          <p>
-            Harapan saya adalah dapat langsung bekerja di salah satu start up
-            terbaik di indonesia sebagai UI/UX Designer. Aamiin....
-          </p>
-        </div>
+        <h2 style="margin-left: -65vh">Motivasi Masuk IT :</h2>
+        <p style="margin-left: -65vh">
+          Motivasi saya Masuk IT adalah karena ketertarikan saya dalam Dunia
+          Teknologi sehingga ada dorongan dan niatan untuk mengarunginya lebih
+          jauh lagi.
+        </p>
+        <h2 style="margin-left: -65vh">Harapan Setelah Lulus :</h2>
+        <p style="margin-left: -65vh">
+          Harapan saya adalah dapat langsung bekerja di salah satu start up
+          terbaik di indonesia sebagai UI/UX Designer. Aamiin....
+        </p>
       </div>
     </div>
 
-    <footer
-      id="footer"
-      style="
-        background-color: #f1f9fb;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: montserrat;
-        font-size: 25px;
-      "
-    >
+    <footer class="footers" id="footer">
       <div>
         <a
           href="https://web.facebook.com/profile.php?id=100009092481365"
@@ -317,7 +133,7 @@
         <a
           href="https://www.linkedin.com/in/faysal-fadel-maulana/"
           target="_blank"
-          ><img src="img/in.png" width="150px" style="border-radius: 50%"
+          ><img src="img/in.png" width="150px" style="border-radius: 50%;"
         /></a>
         <p>LinkedIn Profile</p>
       </div>
