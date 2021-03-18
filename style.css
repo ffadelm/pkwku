@@ -243,7 +243,7 @@ section {
 
   nav ul li a {
     font-family: montserrat;
-    font-size: 22px;
+    font-size: 15px;
     margin: 20px 15px;
     color: #505050;
     font-weight: 700;
@@ -254,7 +254,7 @@ section {
   }
 
   .model {
-    height: 200px;
+    height: 150px;
     position: absolute;
     top: 150px;
     left: 50%;
@@ -262,27 +262,27 @@ section {
   }
 
   .txt-container {
-    top: 55%;
+    top: 50%;
     left: 20%;
   }
 
   .txt-container h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 45px 6px 40px;
   }
 
   .txt-container h1 {
-    font-size: 48px;
-    margin: 45px 0px 50px;
+    font-size: 38px;
+    margin: 45px 0px 45px;
   }
 
   .txt-container p {
-    font-size: 25px;
-    margin: 45px 6px 20px;
+    font-size: 20px;
+    margin: 45px 6px 30px;
   }
 
   .txt-container button {
-    margin: 25px;
+    margin: 5px;
     width: 130px;
     height: 30px;
     font-size: 15px;
@@ -297,10 +297,10 @@ section {
   }
 
   .footers {
-    font-size:12px;
+    font-size:9px;
   }
 
   .footers img {
-    width: 80px;
+    width: 45px;
   }
 }
