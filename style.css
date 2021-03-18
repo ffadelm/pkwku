@@ -257,7 +257,7 @@ section {
   .model {
     height: 150px;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -268,7 +268,7 @@ section {
   }
 
   .txt-container h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 45px 6px 40px;
   }
 
@@ -278,7 +278,7 @@ section {
   }
 
   .txt-container p {
-    font-size: 20px;
+    font-size: 15px;
     margin: 45px 6px 30px;
   }
 
