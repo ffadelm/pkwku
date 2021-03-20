@@ -290,9 +290,10 @@ section {
   }
 
   .about-container {
-    height: 180vh;
+    height: 125vh;
     width: 90%;
     border-radius: 10px;
+
   }
 
   .about-container .about-judul{
@@ -303,6 +304,7 @@ section {
     font-size: 15px;
     margin-left: 0vh !important;
     line-height: 25px;
+    margin: 0px 50px 50px;
   }
 
   .about-container .about-isi .isi2 h2{
@@ -313,6 +315,7 @@ section {
   .about-container .about-isi .isi2 p{
     margin-left: -1vh !important;
     font-size:15px;
+    line-height: 25px;
   }
 
   .footers {
