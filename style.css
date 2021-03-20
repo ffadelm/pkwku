@@ -302,6 +302,7 @@ section {
   .about-container .about-isi{
     font-size: 15px;
     margin-left: 0vh !important;
+    line-height: 25px;
   }
 
   .about-container .about-isi .isi2 h2{
